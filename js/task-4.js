@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 const formatString = function (string) {
     let strArray = string.split('');
     if (strArray.length > 40) {

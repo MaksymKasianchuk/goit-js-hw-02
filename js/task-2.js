@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const calculateEngravingPrice = function(message, pricePerWord) {
     const arr = message.split(' ');

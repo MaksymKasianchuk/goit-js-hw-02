@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const findLongestWord = function(string) {
     const arrOfWords = string.split(' ');
