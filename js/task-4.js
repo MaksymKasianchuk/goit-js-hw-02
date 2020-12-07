@@ -1,11 +1,9 @@
 'use strict';
+
 const formatString = function (string) {
-    let strArray = string.split('');
-    if (strArray.length > 40) {
-        strArray.splice(40);
-        strArray.push('...');
-    }
-    return strArray.join('');
+  const MAX_LENGTH = 40;
+  if (string.length <= MAX_LENGTH) return string;
+  return string.slice(0, MAX_LENGTH - 3) + "...";
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
